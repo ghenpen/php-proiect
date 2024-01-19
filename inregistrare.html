@@ -1,0 +1,189 @@
+<html>
+    <style>
+.button-54 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #424c51;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-54:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+@media (min-width: 768px) {
+  .button-54 {
+    padding: 0.25em 0.75em;
+  }
+}
+body {
+  background-image: url('background.png');
+  background-size: cover;
+}
+    </style>
+<body>
+<form action="action_page.php" style="border:4px solid #A39193;height: 90%; width: 100%; background-color: #F6E0B5; overflow: hidden;" method="post">
+  <div class="container">
+    <div style="
+    background-color: #AA6F73;
+    position: absolute;
+    top: 20px;
+    width : 99%;
+    overflow : hidden;
+">
+    <h1 style="
+    position: relative;
+    left: 30%;
+    color: #66545E;
+">Inregistreaza-te</h1>
+    </div>
+    <div style="
+    position: absolute;
+    top: 130px;
+    width: 99%;
+    overflow : hidden;
+">
+    <p style="
+    position: relative;
+    left: 30%;
+    font-size: 20px;
+    overflow : hidden;
+    color: #66545E;
+">Vă rugăm să completați acest formular pentru a vă crea un cont.</p>
+    <hr><br><br>
+    <label for="nume" style="
+    position: relative;
+    left: 30%;
+    font-size: 20px;
+    overflow : hidden;
+    color: #66545E;
+"><b>Nume:</b></label>
+    <input type="text" placeholder="Introduce-ti numele" name="nume" required style="
+    position: relative;
+    left: 35.40%;
+    font-size: 15px;
+    overflow : hidden;
+    color: #66545E;
+"><br><br>
+
+    <label for="prenume" style="
+    position: relative;
+    left: 30%;
+    font-size: 20px;
+    overflow : hidden;
+    color: #66545E;
+"><b>Prenume:</b></label>
+    <input type="text" placeholder="Introduce-ti prenumele" name="prenume" required style="
+    position: relative;
+    left: 34.10%;
+    font-size: 15px;
+    overflow : hidden;
+    color: #66545E;
+"><br><br>
+
+    <label for="email" style="
+    position: relative;
+    left: 30%;
+    font-size: 20px;
+    overflow : hidden;
+    color: #66545E;
+"><b>Email:</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required style="
+    position: relative;
+    left: 35.60%;
+    font-size: 15px;
+    overflow : hidden;
+    color: #66545E;
+"><br><br>
+
+    <label for="telefon" style="
+    position: relative;
+    left: 30%;
+    font-size: 20px;
+    overflow : hidden;
+    color: #66545E;
+"><b>Telefon:</b></label>
+    <input type="text" placeholder="Introduce-ti numarul de telefonul" name="telefon" required style="
+    position: relative;
+    left: 34.90%;
+    font-size: 15px;
+    overflow : hidden;
+    color: #66545E;
+"><br><br>
+
+    <label for="psw" style="
+    position: relative;
+    left: 30%;
+    font-size: 20px;
+    overflow : hidden;
+    color: #66545E;
+"><b>Parola:</b></label>
+    <input type="password" placeholder="Introduce-ti parola" name="psw" required style="
+    position: relative;
+    left: 35.30%;
+    font-size: 15px;
+    overflow : hidden;
+    color: #66545E;
+"><br><br>
+
+    <label for="psw-repeat" style="
+    position: relative;
+    left: 30%;
+    font-size: 20px;
+    overflow : hidden;
+    color: #66545E;
+"><b>Repetare parola:</b></label>
+    <input type="password" placeholder="Repeta parola" name="psw-repeat" required style="
+    position: relative;
+    left: 31%;
+    font-size: 15px;
+    overflow : hidden;
+    color: #66545E;
+"><br><br>
+    </div>
+    <div class="clearfix" style="
+    position: absolute;
+    left: 21%;
+    font-size: 15px;
+    bottom: 300px;
+    width: 70%;
+    overflow : hidden;
+">
+      <a href="index.php"><button type="button" class="button-54">Cancel</button></a>
+      <a href="index.php"><button id="demo" type="submit" class="button-54" onclick="myFunction()" style="
+    position: relative;
+    left: 20px;
+">Inregistreaza-te</button></a>
+    </div>
+  </div>
+</form>
+
+<script>
+function myFunction() {
+    var password = document.getElementById("psw").value;
+    var confirmPassword = document.getElementById("psw-repeat").value;
+
+    if (password !== confirmPassword) {
+        alert("Parolele nu coincid!");
+        return false;
+    } else {
+            document.getElementById("demo").innerHTML = "Inregistrare efectuata cu succes!";
+            return true;
+  }
+}
+</script>
+
+</body>
+    </html>
